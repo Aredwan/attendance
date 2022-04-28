@@ -53,6 +53,7 @@
         <input type="text" class="form-control" value=<?php echo $attendee['contactnumber'] ?> id="phone" name="phone" aria-describedby="emailHelp">
         <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
     </div>
+    <a href="viewrecords.php" class="btn btn-default">Back to List</button>
     <button type="submit" name="submit" class="btn btn-success">Save Changes</button>
 </form>
 
