@@ -1,6 +1,6 @@
 <?php
     $host = 'localhost';
-    $db = 'attendance_db';
+    $db = 'attendee_db';
     $user = 'root';
     $pass = '';
     $charset = 'utf8mb4';

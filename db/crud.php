@@ -55,7 +55,7 @@
 
         public function getAttendees(){
             try {
-                $sql = "SELECT * FROM attendee a inner join specialties s on a.specialty_id=s.specialty_id";
+                $sql = "SELECT * FROM attendee a inner join specialities s on a.specialty_id=s.specialty_id";
                 $result = $this->db->query($sql);
                 return $result;
             } catch (PDOException $e) {
@@ -67,7 +67,7 @@
 
         public function getAttendeeDetails($id){
             try {
-                $sql = "SELECT * FROM attendee a inner join specialties s on a.specialty_id=s.specialty_id where attendee_id=:id";
+                $sql = "SELECT * FROM attendee a inner join specialities s on a.specialty_id=s.specialty_id where attendee_id=:id";
                 $stmt = $this->db->prepare($sql);
                 $stmt -> bindparam(':id', $id);
                 $stmt->execute();
@@ -81,7 +81,7 @@
         }
         public function getSpecialties(){
             try{
-                $sql = "SELECT * FROM specialties";
+                $sql = "SELECT * FROM specialities";
                 $result = $this->db->query($sql);
                 return $result;
             }catch (PDOException $e) {
