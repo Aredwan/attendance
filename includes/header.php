@@ -1,3 +1,7 @@
+<?php 
+include_once 'includes/session.php';
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -37,6 +41,19 @@
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
             </li> -->
+          </ul>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <?php if(!isset($_SESSION['user id'])){
+              
+            } ?>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login.php">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="viewrecords.php">View Attendees</a>
+            </li>
           </ul>
         </div>
       </div>
